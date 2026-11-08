@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js API Integration
+
+A simple User Directory application built with Next.js, TypeScript, and Tailwind CSS.
+
+This project demonstrates how frontend applications communicate with external APIs to retrieve and display data.
+
+## Technologies Used
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- JavaScript Fetch API
+
+## Features
+
+- Fetches users from an external API.
+- Displays user names and email addresses.
+- Uses a reusable API function.
+- Handles asynchronous requests with async/await.
+- Uses TypeScript to describe API data.
+- Displays API data using the map() method.
+
+## API Used
+
+[JSONPlaceholder](https://jsonplaceholder.typicode.com/users)
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   └── page.tsx
+│
+└── lib/
+    └── api.ts
+```
+
+## Concepts Practised
+
+- Understanding APIs and API endpoints.
+- Fetching external data with fetch().
+- Understanding async and await.
+- Working with JSON responses.
+- TypeScript types and arrays.
+- Importing and exporting functions.
+- Displaying API data in Next.js.
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone nextjs-api-integration
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Learning Objective
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The purpose of this project is to introduce frontend developers to API integration using Next.js without building a backend.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Built as a practical frontend development learning project.**
